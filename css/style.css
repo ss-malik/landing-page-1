@@ -14,7 +14,10 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
+.outer-container {
+  width: 1366px;
+  margin: 0 auto;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -71,8 +74,7 @@ body {
   display: flex;
   position: relative;
   min-height: 100vh;
-  max-width: 100vw;
-  width: 100vw;
+  width: 100%;
   /* gap: 180px; 
   justify-content: space-between;*/
   background: url(./assests/right-box.svg) no-repeat right bottom/auto;
@@ -82,7 +84,7 @@ body {
   display: flex;
   max-width: 597px;
   width: 100%;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
   align-items: center;
 }
 
@@ -102,8 +104,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  flex-basis: 500px;
+  /* align-items: flex-start; */
+  /* flex-basis: 500px; */
 }
 
 .hero-text h1 {
@@ -180,78 +182,4 @@ body {
   transform: translateX(0) !important;
 }
 
-@media (max-width: 1007px) {
-  .nav-bar {
-    padding: 10px 20px;
-  }
-  .nav-bar ul {
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-    transform: translateX(-100%);
-    row-gap: 25px;
-    background-color: aqua;
-    transition: transform 1s ease-in-out;
-    z-index: -2;
-  }
-  .hamburger-menu {
-    display: block;
-  }
-  .hero-text h1 {
-    font-size: 42px;
-  }
-  .bg {
-    left: -300px;
-    /* display: none; */
-  }
-}
-@media (max-width: 640px) {
-  .hero-section {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    height: 100%;
-    background-size: contain;
-  }
-  .hero-img {
-    justify-content: center;
-  }
-  .social-media {
-    position: static;
-    margin-bottom: 20rem;
-  }
-  .bg {
-    position: fixed;
-    left: -255px;
-    /* top: -200px; */
-  }
-  .bg:nth-child(1) {
-    display: none;
-  }
-  .bg:nth-child(2) {
-    display: none;
-  }
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 450px;
-  }
-  .hero-text p {
-    max-width: 400px;
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 1367px) {
-  .hero-section {
-    justify-content: space-around;
-  }
-}
+/* 

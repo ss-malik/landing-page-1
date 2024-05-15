@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid #000; */
+}
+
+:root {
+  --darkColor: #603936;
+  --main-color: #e63946;
+  --lightColor: #fff9c6;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+
+.outer-container {
+  /* background-color: var(--darkColor); */
+  width: 1350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.outer-container .nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1152px;
+  margin: 42px auto 0;
+}
+
+.nav-bar .logo {
+  width: 41px;
+}
+
+.nav-bar .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar .logo img {
+  width: 100%;
+}
+
+.outer-container .nav-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 4px 0;
+}
+.outer-container .nav-bar ul li {
+  margin-left: 30px;
+  padding: 6px 0px;
+}
+.nav-bar ul li a {
+  padding: 5px 16px;
+  color: #000;
+  font-weight: 900;
+}
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  /* z-index: 11; */
+}
+
+.hamburger-menu .bar {
+  width: 28px;
+  height: 2px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.btn {
+  padding: 8px 24px !important ;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.active {
+  color: var(--main-color) !important;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 84px);
+  width: 100%;
+}
+
+.hero-img {
+  flex: 1;
+}
+.hero-img img {
+  /* width: 100%; */
+}
+.hero-text {
+  flex: 1.15;
+}
+.hero-text h1 {
+  font-family: "Oleo Script Swash Caps", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  line-height: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  line-height: 2rem;
+  width: 490px;
+  margin-bottom: 2rem;
+}
+
+.dark {
+  background-color: #000;
+  color: var(--lightColor);
+  display: inline-block;
+}
+
+.social-media {
+  position: absolute;
+  right: 115px;
+  bottom: 15px;
+}
